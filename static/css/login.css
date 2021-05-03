@@ -131,21 +131,17 @@ body{
 .footer-heading{
     display: flex;
     flex-direction: column;
-    margin-right:4rem; 
-}
-.footer-heading h2{
-    margin-bottom: 2rem;
 }
 .footer-heading a{
     color: #000;
     text-decoration: none;
     margin-bottom:0.5rem;
 }
+.colch{
+    padding: 2% 5% 2% 0%;
+}
 .footer-heading a:hover{
     transition: 0.3s ease-out;
-}
-.footer-email-form h2{
-    margin-bottom: 2rem;
 }
 #footer-email{
     width: 100%;
@@ -160,7 +156,6 @@ body{
   text-align: center;
 }
 .footer-email-btn{
-    height:40px;
     border-radius:4px;
     outline: none;
     border: none;
@@ -169,4 +164,24 @@ body{
 #footer-email-btn:hover{
     cursor:pointer;
     transition: all 0.4s ease-out;
+}
+@media (max-width:1250px){
+    .headerimage{
+        margin-top: 3%;
+        border-radius: 0%;
+        transform: rotate(0deg);
+        position: static;
+    }
+}
+@media (max-width:992px){
+    #header{
+        padding: 3% 15% 7% 15%;
+    }
+    .headerimage{
+        border-radius: 0%;
+        transform: rotate(0deg);
+        padding-top: 10%;
+        position: static;
+        display: none;
+    }
 }
